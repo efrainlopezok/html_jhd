@@ -1,0 +1,87 @@
+.invitation-wording .header-hero {
+	background: #f4f4f4 url(../../resources/images/invitation-wording-hero.png) no-repeat;
+    background-position: center 0;
+    background-size: auto 100%;
+    min-height: 354px;
+}
+.invitation-wording h1.inside-hero { margin-right: 12%; }
+.invitation-wording .heading-toolbar {
+	margin-top: -20px;
+}
+
+.decline-wrap {
+	background: linear-gradient(to bottom, #f4f4f4, #f4f4f4), 
+			url(../../resources/images/invitation/bg-decline.png);
+	background-repeat: no-repeat;
+	background-size: 100% calc(100% - 154px), 100% 154px;
+	background-position: 0 0, left bottom;
+	padding: 0px;
+	padding-bottom: 90px;
+}
+
+.inv-word-heading >.row >div:last-child {
+	padding-left: 80px;
+}
+
+.tabs-invitation-wording .decline-wrap >.container {
+	min-height: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+	.accordions h4 {
+		font-size: 22px;
+	}
+
+	#tab_mitzvahs .decline-wrap >.container {
+		padding-bottom: 50px;
+	}
+	#tab_weddings .decline-wrap >.container {
+		padding-bottom: 38px;
+	}
+	#tab_dates .tab-content-image,
+	#tab_weddings .tab-content-image,
+	#tab_programs .tab-content-image {
+		margin-right: -8px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.invitation-wording .nav-tabs>li>a {
+		margin-right: 12px;
+	}
+	.invitation-wording .nav-tabs>li:last-child>a { margin-right: 0 !important; }
+	.invitation-wording h1.inside-hero { margin-right: 5%; }
+}
+@media screen and (max-width: 992px) {
+	.page-heading {
+		display: block;
+	}
+	.invitation-wording h1.inside-hero { margin-right: 0; }
+	.invitation-wording .nav-tabs {
+		margin-left: -4px;
+		margin-bottom: 30px;
+	}
+	.inv-word-heading >.row >div:last-child {
+		padding-left: 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.invitation-wording .nav-tabs>li>a {
+		line-height: 2em;
+		margin-right: 10px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.invitation-wording .nav-tabs>li>a:after {
+		bottom: -1px;
+	}
+	.tab-content-image {
+		margin-right: auto !important;
+	}
+	.inv-word-heading >.row >div:last-child {
+		text-align: center;
+	}
+	.invitation-wording .d-gold-list {
+		display: inline-block;
+		text-align: left;
+	}
+}

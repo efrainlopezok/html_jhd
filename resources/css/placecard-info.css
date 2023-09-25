@@ -1,0 +1,200 @@
+/* Place card board info page
+ ------*/
+.pcinfo .header-hero {
+    background: url(../../resources/images/placecard-info-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 351px;
+}
+.pcinfo .base-pricing-content {
+    background-image: url(../../resources/images/placecard-info/pc-bg-1.png),
+        url(../../resources/images/placecard-info/pc-bg-2.png),
+        url(../../resources/images/placecard-info/pc-bg-3-1.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 565px, right 906px;
+    background-size: auto auto, auto auto, auto 558px;
+    min-height: 1470px;
+    padding-top: 514px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Pricing box type 2 */
+.pricing-box.pbox2 {
+    background-color: #fff;
+    border: 0 none;
+    padding: 84px 5px 5px;
+    max-width: 330px;
+    margin: 0 auto;
+}
+.pricing-box.pbox2 h4,
+.pricing-box h4.title-gold {
+    background: url(../../resources/images/diamond-gold.png) no-repeat;
+    background-position: center 0;
+    font-family: 'Gotham Rounded Book';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1em;
+    padding-top: 38px;
+    top: -58px;
+    text-transform: uppercase;
+}
+.pricing-box.pbox2 h4 small,
+.pricing-box h4.title-gold small {
+    color: #fff;
+    font-family: 'Gotham Rounded';
+    font-weight: 300;
+    font-size: 14px;
+}
+.princing-box.pbox2 h3, .princing-box.pbox2 p {
+    color: #232020;
+}
+.pricing-box.pbox2 h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.pricing-box.pbox2 p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.pricing-box.pbox2 p i {
+    font-weight: 600;
+}
+.pricing-box.pbox2 p.med-text {
+    font-size: 28px; /* line-height: 24px; */
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+.pricing-box.pbox2 hr {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.pricing-area {
+    padding-top: 36px;
+    padding-bottom: 37px;
+}
+
+.bg-light-gray {
+    background-color: #ebebeb;
+}
+
+/* Diamond list black */
+ul.diamond-black {
+    list-style-type: none;
+    margin-bottom: 29px;
+    padding: 0;
+}
+ul.diamond-black li { /*14 px font size*/
+    background: url(../../resources/images/diamond-black-item.png) scroll 4px 13px no-repeat;
+    color: #232020;
+    font-weight: 400;
+    font-family: 'Gotham Rounded Book';
+    line-height: 32px;
+    padding-left: 36px;
+}
+ul.diamond-black li.with-info {
+    line-height: 1.2em;
+}
+ul.diamond-black li i {
+    font-family: 'Gotham Rounded';
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.discounts-available {
+    padding-top: 58px;
+    text-align: right;
+}
+.discounts-available img {
+    margin-bottom: 23px;
+    margin-right: 50px;
+}
+.discounts-available h5 {
+    color: #fff;
+    margin-right: 50px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+
+
+.panel-addons {
+    padding-top: 89px;
+    padding-bottom: 0;
+}
+
+.pricing-box.pbox-addon {
+    border-color: #b9b9b9;
+    max-width: 324px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    padding-top: 86px;
+    margin-bottom: 30px;
+}
+.pricing-box.pbox-addon p.med-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.pricing-box.pbox-addon {
+    margin-bottom: 28px;
+}
+.pricing-box hr.sm {
+    width: 72px;
+}
+
+@media screen and (min-width: 1260px ) {
+    .pricing-box.pbox2 { margin: 0; }
+    .base-pricing-content >.row > div:nth-child(2) .pricing-box.pbox2, 
+    .base-pricing-content >.row > div:nth-child(3) .pricing-box.pbox2 { margin-left: 7px; }
+}
+@media screen and (max-width: 1084px) {
+    .pcinfo .base-pricing-content {
+        background-position: 0 0, 0 565px, 60% 906px;
+        background-color: #f3f3f3;
+    }
+}
+@media screen and (max-width: 991px) {
+    .pcinfo .base-pricing-content {
+        background-image: url(../../resources/images/placecard-info/pc-bg-1.png),
+            url(../../resources/images/placecard-info/pc-bg-2.png),
+            url(../../resources/images/placecard-info/pc-bg-3.png);
+    }
+    .discounts-available h5 { 
+        color: #000; 
+    }
+    .pricing-box.pbox2,
+    .pricing-box.pbox-addon {
+        margin-bottom: 75px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .pcinfo .base-pricing-content {
+        padding-top: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .border-panel {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .pcinfo a.btn.btn-primary {
+        white-space: pre-wrap;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .pcinfo .base-pricing-content {
+        padding-top: 150px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .discounts-available h5 { 
+        font-size: 18px; 
+    }
+}

@@ -1,0 +1,263 @@
+/* Invitation page
+ --------*/
+.invitation .header-hero {
+	background: url(../../resources/images/invitation-101-hero.jpg) no-repeat;
+    background-position: center 0;
+    background-size: auto 100%;
+    min-height: 354px;
+}
+.invitation h1.inside-hero {
+	margin-top: -30px;
+}
+
+.invitation p i { font-weight: 400; }
+
+.attribute-title {
+	color: #2e2e2e;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: center;
+	text-transform: uppercase;
+}
+.attribute-title + img {
+	margin-bottom: 12px;
+}
+
+/*  Utilities panels
+ -------------*/
+.panel-decline {
+	background: linear-gradient(to bottom, #f4f4f4, #f4f4f4), 
+			url(../../resources/images/invitation/bg-decline.png);
+	background-repeat: no-repeat;
+	background-size: 100% calc(100% - 130px), auto auto;
+	background-position: 0 0, left bottom;
+	padding: 40px;
+	padding-bottom: 130px;
+}
+.panel-incline {
+	background: linear-gradient(to bottom, #f4f4f4, #f4f4f4), 
+			url(../../resources/images/invitation/bg-incline.png);
+	background-repeat: no-repeat;
+	background-size: 100% calc(100% - 64px), auto 185px;
+	background-position: 0 100px, 0 0;
+	padding: 40px;
+	padding-top: 64px;
+}
+.panel-incline.panel-dark {
+	background: url(../../resources/images/invitation/bg-incline-dark.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	padding: 40px;
+	padding-top: 64px;
+}
+
+
+.btm-cards {
+	margin-top: -80px;
+}
+.btm-cards .rsvp-card {
+	width: 721px; /*681px width*/
+}
+.btm-cards .advices {
+	width: calc(100% - 721px)
+}
+
+.advices .panel-incline {
+	margin-top: 70px;
+	height: calc(100% - 70px);
+}
+
+.advice-item {
+	padding: 42px 9px 25px;
+}
+.advice-item p {
+	margin-bottom: 0;
+}
+.advice-item.adv-r {
+	text-align: right;
+}
+
+@media screen and (min-width: 1260px) {
+	.grid-40.row {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.grid-40 .col-xs-1,
+	.grid-40 .col-sm-1,
+	.grid-40 .col-md-1,
+	.grid-40 .col-lg-1,
+	.grid-40 .col-xs-2,
+	.grid-40 .col-sm-2,
+	.grid-40 .col-md-2,
+	.grid-40 .col-lg-2,
+	.grid-40 .col-xs-3,
+	.grid-40 .col-sm-3,
+	.grid-40 .col-md-3,
+	.grid-40 .col-lg-3,
+	.grid-40 .col-xs-4,
+	.grid-40 .col-sm-4,
+	.grid-40 .col-md-4,
+	.grid-40 .col-lg-4,
+	.grid-40 .col-xs-5,
+	.grid-40 .col-sm-5,
+	.grid-40 .col-md-5,
+	.grid-40 .col-lg-5,
+	.grid-40 .col-xs-6,
+	.grid-40 .col-sm-6,
+	.grid-40 .col-md-6,
+	.grid-40 .col-lg-6,
+	.grid-40 .col-xs-7,
+	.grid-40 .col-sm-7,
+	.grid-40 .col-md-7,
+	.grid-40 .col-lg-7,
+	.grid-40 .col-xs-8,
+	.grid-40 .col-sm-8,
+	.grid-40 .col-md-8,
+	.grid-40 .col-lg-8,
+	.grid-40 .col-xs-9,
+	.grid-40 .col-sm-9,
+	.grid-40 .col-md-9,
+	.grid-40 .col-lg-9,
+	.grid-40 .col-xs-10,
+	.grid-40 .col-sm-10,
+	.grid-40 .col-md-10,
+	.grid-40 .col-lg-10,
+	.grid-40 .col-xs-11,
+	.grid-40 .col-sm-11,
+	.grid-40 .col-md-11,
+	.grid-40 .col-lg-11,
+	.grid-40 .col-xs-12,
+	.grid-40 .col-sm-12,
+	.grid-40 .col-md-12,
+	.grid-40 .col-lg-12 {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+
+	.styles-panel >.row >div[class*="col-"]:first-child {
+		width: 663px;
+		padding-right: 19px;
+	}
+	.styles-panel >.row >div[class*="col-"]:last-child {
+		padding-left: 19px;
+		width: calc(100% - 663px);
+	}
+}
+@media screen and (max-width: 1259px) {
+	.rsvp-card .panel-incline {
+		background-size: 100% auto;
+	}
+}
+@media screen and (max-width: 1140px) {
+	.btm-cards >div[class*="col-"]:first-child {
+		width: 60%;
+	}
+	.btm-cards >div[class*="col-"]:last-child {
+		width: 40%;
+	}
+	.rsvp-card .panel-incline,
+	.advices .panel-incline {
+		height: 100%;
+	}
+	.advices .panel-incline { 
+		margin-top: 60px;
+		height: calc(100% - 60px); 
+	}
+}
+@media screen and (max-width: 991px) {
+	.panel-decline,
+	.panel-incline { 
+		padding: 30px;
+	}
+	.panel-decline { padding-bottom: 130px;  }
+	.flat-col >.row > div,
+	.pocketfold-col >.row >div {
+		text-align: center;
+	}
+	.rsvp-card {
+		margin-bottom: 30px !important;
+	}
+	.advices {
+		position: static;
+	}
+	.btm-cards >div[class*="col-"] {
+		width: 100% !important;
+	}
+	.btm-cards .panel-incline.panel-dark {
+		background: #393536 url(../../resources/images/invitation/bg-incline-dark.png) 0 0 no-repeat;
+		margin-top: 0;
+		padding-top: 15px;
+	    padding-bottom: 15px;
+	    position: static;
+	    height: auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.panel-decline,
+	.panel-incline,
+	.btm-cards .panel-incline.panel-dark { 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.st-cardstock >.row >div:last-child {
+		margin-top: 25px;
+	}
+	.luxury-cardstock > .row >div:last-child {
+		margin-top: 25px;
+	}
+	.luxury-cardstock > .row >div img {
+		margin-left: auto;
+    	margin-right: auto;
+    	display: block;
+	}
+	.embellishments >.row >div {
+		margin-bottom: 30px !important;
+	}
+
+	.envelope-liners >.row >div img, 
+	.envelope-addr >.row >div img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+@media screen and (max-width: 590px) {
+	.flat-col >.row > div,
+	.pocketfold-col >.row >div {
+		width: 50%;
+	}
+	.st-cardstock >.row >div {
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+	}
+	.st-cardstock >.row >div .bullet-list {
+		display: inline-block;
+		text-align: left;
+	}
+	.insert-cards >.row >div {
+		width: 100%;
+		margin-left: 0;
+	}
+	.insert-cards >.row >div img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.embellishments >.row >div {
+		width: 100%;
+	}
+	.embellishments >.row >div img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+@media screen and (max-width: 480px) {
+	.flat-col >.row > div,
+	.pocketfold-col >.row >div {
+		width: 100%;
+	}	
+}
